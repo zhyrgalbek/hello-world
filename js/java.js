@@ -9,7 +9,8 @@ $(function(){
 		loop: true,
 		nav: true
 	});
-	$(".nav").on("click", function(){
+	$(".nav").on("click", function(e){
+		e.preventDefault();
 		$(".drops-1").fadeToggle(500);
 	});
 	$(document).mouseup(function(e){
